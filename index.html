@@ -30,12 +30,16 @@
         }
         
         function Sidebar() { /*sidebar function */
+            function handleClick() {
+            console.log('count?');
+            }
             return (
                 <div>
                     <h1>Sidebar</h1>                    
                     <Sidebar_ />
                     <h3>middle text</h3>
                     <Sidebar_ side="3rd line" />
+                    <button onClick={handleClick}>Like</button>
                 </div>
             );
         }
