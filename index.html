@@ -30,9 +30,9 @@
         }
         
         function Sidebar() { /*sidebar function */
-            const [likes, setLikes] = React.useState(0);
+            const [clicks, setClicks] = React.useState(0);
             function handleClick() {
-                setLikes(likes + 1);
+                setClicks(clicks + 1);
             }
             return (
                 <div>
@@ -40,7 +40,7 @@
                     <Sidebar_ />
                     <h3>middle text</h3>
                     <Sidebar_ side="3rd line" />
-                    <button onClick={handleClick}>Like({likes})</button>
+                    <button onClick={handleClick}>{clicks}Click</button>
                 </div>
             );
         }
