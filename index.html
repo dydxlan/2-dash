@@ -29,20 +29,19 @@
             return <h1>Footer</h1>;
         }
         
-        function Sidebar(test) { /*sidebar function */
-            console.log(test); 
+        function Sidebar() { /*sidebar function */
             return (
                 <div>
                     <h1>Sidebar</h1>                    
-                    <Sidebar1 />
+                    <Sidebar_ side="1st line" />
                     <h3>middle text</h3>
-                    <Sidebar2 />
+                    <Sidebar_ side="3rd line" />
                 </div>
             );
         }
 
-        function Sidebar1() { /*sidebar function */
-            return <h3>Sidebar1</h3>;
+        function Sidebar_(side) { /*sidebar function */
+            return <h3>{side}</h3>;
         }
 
         function Sidebar2() { /*sidebar function */
