@@ -31,11 +31,11 @@
         
         function Sidebar() { /*sidebar function */
             const [clicks, setClicks] = React.useState(0);
-            function handleClick() {
+            function handleClick1() {
             setLikes(likes + 1);
             }
             const [on, setOff] = React.useState(false);
-            function handleClick() {
+            function handleClick2() {
                 setOff(!on);
             }
             return (
@@ -44,8 +44,8 @@
                     <Sidebar_ />
                     <h3>middle text</h3>
                     <Sidebar_ side="3rd line" />
-                    <button onClick={handleClick}>{clicks} Clicks</button>
-                    <button onClick={handleClick}>{on ? 'On' : 'Off'}</button>
+                    <button onClick={handleClick1}>{clicks} Clicks</button>
+                    <button onClick={handleClick2}>{on ? 'On' : 'Off'}</button>
                 </div>
             );
         }
