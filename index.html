@@ -14,17 +14,44 @@
   </head>
 
   <body>
-    <div id="text 1"></div>
+    <div id="text 1"></div> /*placing the root node? */
     <script type="text/babel" data-type="module" data-presets="react">
         import React from 'react';
         import { createRoot } from 'react-dom/client';
 
-        const domNode = document.getElementById('text 1');
-        function Header() {
-        return <h1>Develop. Preview. Ship.</h1>;
+        const domNode = document.getElementById('text 1'); /*getting the DOM node? */
+
+        function Header() { /*header function */
+        return <h1>Header</h1>; 
+        }
+
+        function Footer() { /*footer function */
+            return <h1>Footer</h1>;
+        }
+        
+        function Sidebar() { /*sidebar function */
+            return <h1>Sidebar</h1>;
+        }
+
+        function Sidebar1() { /*sidebar function */
+            return <h1>Sidebar</h1>;
+        }
+
+        function Sidebar2() { /*sidebar function */
+            return <h1>Sidebar</h1>;
+        }
+
+        function HomePage() { /*homepage function */
+            return (
+                <div>
+                    <Header /> /*calling header function */
+                    <Sidebar><Sidebar1 /><Sidebar2 /></Sidebar> /*calling sidebar function */
+                    <Footer /> /*calling footer function */
+                </div>
+            );
         }
         const root = createRoot(domNode);
-        root.render(<Header />);
+        root.render(<HomePage />);
     </script>
   </body>
 </html>
