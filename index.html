@@ -29,31 +29,32 @@
             return <h1>Footer</h1>;
         }
         
-        function Sidebar() { /*sidebar function */
+        function Sidebar(test) { /*sidebar function */
+            console.log(test); 
             return (
                 <div>
                     <h1>Sidebar</h1>                    
                     <Sidebar1 />
-                    <h1>middle text</h1>
+                    <h3>middle text</h3>
                     <Sidebar2 />
                 </div>
             );
         }
 
         function Sidebar1() { /*sidebar function */
-            return <h1>Sidebar1</h1>;
+            return <h3>Sidebar1</h3>;
         }
 
         function Sidebar2() { /*sidebar function */
-            return <h1>Sidebar2</h1>;
+            return <h3>Sidebar2</h3>;
         }
 
         function HomePage() { /*homepage function */
             return (
                 <div>
-                    <Header /> /*calling header function */
-                    <Sidebar /> /*calling sidebar function */
-                    <Footer /> /*calling footer function */
+                    <Header /> 
+                    <Sidebar /> 
+                    <Footer /> 
                 </div>
             );
         }
