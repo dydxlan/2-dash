@@ -33,15 +33,15 @@
             return (
                 <div>
                     <h1>Sidebar</h1>                    
-                    <Sidebar_ side="1st line" />
+                    <Sidebar_ />
                     <h3>middle text</h3>
                     <Sidebar_ side="3rd line" />
                 </div>
             );
         }
 
-        function Sidebar_(side) { /*sidebar function */
-            return <h3>{side}</h3>;
+        function Sidebar_({side}) { /*sidebar function */
+            return <h3>{side ? side : "Default Sidebar Text"}</h3>;
         }
 
         function Sidebar2() { /*sidebar function */
