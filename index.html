@@ -30,12 +30,14 @@
         }
         
         function Sidebar({Sidebar1, Sidebar2}) { /*sidebar function */
-            return <h1>Sidebar</h1>;     
             return (
-                <div>
-                    {Sidebar1}
-                    {Sidebar2}
-                </div>
+                <sidebar>
+                    <h1>Sidebar</h1>
+                    <div>
+                        {Sidebar1}
+                        {Sidebar2}
+                    </div>
+                </sidebar>
             );
         }
 
