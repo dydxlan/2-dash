@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import button from './button'
 
 
 function Header() { /*header function */
@@ -10,22 +11,14 @@ function Footer() { /*footer function */
 }
 
 function Sidebar() { /*sidebar function */
-    const [clicks, setClicks] = useState(0);
-    function handleClick1() {
-    setClicks(clicks + 1);
-    }
-    const [on, setOff] = useState(false);
-    function handleClick2() {
-        setOff(!on);
-    }
+
     return (
         <div>
             <h1>Sidebar</h1>                    
             <Sidebar_ />
             <h3>middle text</h3>
             <Sidebar_ side="3rd line" />
-            <button onClick={handleClick1}>{clicks} Clicks</button>
-            <button onClick={handleClick2}>{on ? 'On' : 'Off'}</button>
+            <button/>
         </div>
     );
 }
