@@ -1,5 +1,5 @@
 
-import button from './button'
+import Button from './button'
 
 
 function Header() { /*header function */
@@ -18,7 +18,7 @@ function Sidebar() { /*sidebar function */
             <Sidebar_ />
             <h3>middle text</h3>
             <Sidebar_ side="3rd line" />
-            <button/>
+            <Button/>
         </div>
     );
 }
@@ -37,7 +37,7 @@ export default function HomePage() { /*homepage function */
             <Header /> 
             <Sidebar /> 
             <Footer /> 
-        </div>
+        </div>  
     );
 }
 
