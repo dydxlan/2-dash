@@ -13,7 +13,7 @@ export default function button(){
     }
 
     return (
-        <button onClick={handleClick1}>{clicks} Clicks</button>
+        <button onClick={handleClick1}>{clicks} Clicks</button>,
         <button onClick={handleClick2}>{on ? 'On' : 'Off'}</button>
     )
 }
